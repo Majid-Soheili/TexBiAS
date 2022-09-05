@@ -1,0 +1,47 @@
+%! Author = soheili
+%! Date = 9/5/2022
+
+% Preamble
+\documentclass[a4paper]{article}
+
+% Packages
+\linespread{1.5} % normal line space
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage[hscale=0.7,vscale=0.8]{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{cite}
+\usepackage[ruled,lined,linesnumbered]{algorithm2e}
+\usepackage[inline]{enumitem}
+\usepackage{subcaption}
+\usepackage{algpseudocode}
+\usepackage{multirow}
+\usepackage{microtype}
+\usepackage{amsfonts}
+\usepackage{color}
+\DisableLigatures{encoding = *, family = *}
+
+% Our commands
+\newcommand{\remeet}{{\color{red} \dag}}
+\newcommand{\deadline}[1]{{\color{blue} \hfill{#1} }}
+
+% Document
+\begin{document}
+    \title{BiAS: Bioinformatic Attributes Standardization}
+    \author{Majid Soheili}
+    \maketitle
+
+    \section{Why}\label{sec:why}
+    Thousands of bioinformatic studies are done yearly.
+    Most of the authors are eager to submit the bioinformatic samples in the NCBI SRA dataset.
+    Although there are some regularities in explaining a dataset using various attributes, the names of attributes are so messy.
+
+    \section{How}\label{sec:how}
+    \section{What}\label{sec:what}
+
+    \bibliography{main}
+    \bibliographystyle{plain}
+
+\end{document}
