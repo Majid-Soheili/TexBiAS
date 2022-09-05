@@ -5,11 +5,38 @@
 \documentclass[11pt]{article}
 
 % Packages
+\linespread{1.5} % normal line space
 \usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage[hscale=0.7,vscale=0.8]{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{cite}
+\usepackage[ruled,lined,linesnumbered]{algorithm2e}
+\usepackage[inline]{enumitem}
+\usepackage{subcaption}
+\usepackage{algpseudocode}
+\usepackage{multirow}
+\usepackage{microtype}
+\usepackage{amsfonts}
+\usepackage{color}
+\DisableLigatures{encoding = *, family = *}
 
 % Document
 \begin{document}
+    \title{BiAS: Bioinformatic Attributes Standardization - Documentation}
+    \author{Majid Soheili}
+    \maketitle
 
-
+    \section{Introduction}\label{sec:intro}
+    In the Bioinformatics world, hundreds of studies and research are performed daily.
+    Most of them prepare their data to public in public repository like NCBI.\@
+    Although there are some minimum standard for publishing datasets, but the authors can define some custom attributes by themselves.
+    These attributes are saved in a same format {name:value}.
+    Sometimes different authors use various name for a single feature.
+    For example, for describing of the gender of the host, various names such as gender and sex can be used by authors.
+    In this project, aggregating the same attributes that probably can have different names is a major aim.
+    However, ahead problems are more complicated than having different names for an individual attribute.
 
 \end{document}
